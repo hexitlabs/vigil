@@ -1,0 +1,23 @@
+{
+  "name": "restrictive",
+  "description": "Maximum safety — blocks most tools, minimal autonomy",
+  "version": "1.0",
+  "rules": {
+    "allowedTools": ["read", "web_search"],
+    "blockedTools": ["exec", "write", "delete", "admin"],
+    "blockedPatterns": {
+      "exec": ["*"],
+      "write": ["*"],
+      "http_request": ["*"]
+    },
+    "allowedPaths": ["/workspace/", "/tmp/"],
+    "blockedPaths": ["/etc/", "/root/", "/var/", "/usr/", "/bin/", "/sbin/"],
+    "maxParams": {
+      "exec.timeout": 30
+    },
+    "network": {
+      "allowOutbound": false,
+      "blockedDomains": ["*"]
+    }
+  }
+}

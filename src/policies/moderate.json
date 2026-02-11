@@ -1,0 +1,22 @@
+{
+  "name": "moderate",
+  "description": "Balanced safety — allows common tools with guardrails",
+  "version": "1.0",
+  "rules": {
+    "allowedTools": ["exec", "read", "write", "web_search", "web_fetch", "db_query"],
+    "blockedTools": ["admin", "deploy", "delete_namespace"],
+    "blockedPatterns": {
+      "exec": ["rm -rf /", "mkfs", "dd if=", "chmod 777", "curl * | bash"],
+      "db_query": ["DROP TABLE", "TRUNCATE", "DELETE FROM * WHERE 1=1"]
+    },
+    "allowedPaths": ["/home/", "/workspace/", "/tmp/", "/var/log/"],
+    "blockedPaths": ["/etc/shadow", "/root/.ssh/", "/root/.aws/"],
+    "maxParams": {
+      "exec.timeout": 300
+    },
+    "network": {
+      "allowOutbound": true,
+      "blockedDomains": ["webhook.site", "ngrok.io", "requestbin.com", "pipedream.net"]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "permissive",
+  "description": "Minimal restrictions — trusts agent, blocks only critical threats",
+  "version": "1.0",
+  "rules": {
+    "allowedTools": ["*"],
+    "blockedTools": [],
+    "blockedPatterns": {
+      "exec": ["rm -rf /", "mkfs", "dd if=*/dev/*", ":(){ :|:& };:"]
+    },
+    "allowedPaths": ["*"],
+    "blockedPaths": [],
+    "maxParams": {
+      "exec.timeout": 600
+    },
+    "network": {
+      "allowOutbound": true,
+      "blockedDomains": []
+    }
+  }
+}
