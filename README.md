@@ -119,6 +119,35 @@ See [`examples/`](./examples/) for complete integration patterns:
 - **[openclaw-extension.ts](./examples/openclaw-extension.ts)** — OpenClaw/Clawdbot agent extension
 - **[generic-hook.ts](./examples/generic-hook.ts)** — Generic before-tool-call hook
 
+## Roadmap
+
+Vigil v0.1.0 ships with pattern-based rules — fast, predictable, zero dependencies. Here's what's coming:
+
+### 🔜 v0.2 — Policy Engine
+- Custom policy files (YAML) for org-specific rules
+- Per-agent permission scoping (agent X can only call tools Y, Z)
+- Allowlist/blocklist for paths, domains, commands
+
+### 🔜 v0.3 — Benchmarks & Reporting
+- Published false positive/negative rates across standard threat datasets
+- Structured audit logging (JSON) for compliance
+- `vigil report` CLI for security posture snapshots
+
+### 🧠 v1.0 — ML Model (In Development)
+- Fine-tuned 7B safety model for context-aware action validation
+- Catches attacks that bypass pattern matching (obfuscation, indirect injection)
+- Same API — `checkAction()` automatically upgrades, no code changes
+- Hybrid mode: rules run first (<2ms), ML runs on ambiguous cases
+- **Current internal accuracy: 99% on our test suite**
+
+### 🌐 Future — Vigil Cloud
+- Hosted API with dashboard and analytics
+- Team policies with role-based access
+- Real-time threat intelligence feed
+- Custom model training on your agent logs
+
+Want to influence the roadmap? [Open an issue](https://github.com/hexitlabs/vigil/issues) or star the repo to show interest.
+
 ## License
 
-Apache 2.0 — Built by [Hexit Labs](https://github.com/hexitlabs)
+Apache 2.0 — Built by [HexIT Labs](https://github.com/hexitlabs)
