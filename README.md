@@ -123,28 +123,31 @@ See [`examples/`](./examples/) for complete integration patterns:
 
 Vigil v0.1.0 ships with pattern-based rules — fast, predictable, zero dependencies. Here's what's coming:
 
-### 🔜 v0.2 — Policy Engine
-- Custom policy files (YAML) for org-specific rules
+### 🔜 v0.2 — Policy Engine + MCP Proxy
+- Custom YAML policy files for org-specific rules
 - Per-agent permission scoping (agent X can only call tools Y, Z)
 - Allowlist/blocklist for paths, domains, commands
+- **MCP Proxy** — drop-in safety layer for any MCP server. Zero code changes, just a config update. Works with Claude Desktop, Cursor, Windsurf, and any MCP client.
 
-### 🔜 v0.3 — Benchmarks & Reporting
+### 🔜 v0.3 — Vigil Cloud + Audit Logging
+- Hosted API with dashboard and warn-mode analytics
+- Structured JSON audit logs for compliance
+- Team policies with role-based access
+- See what your agents are actually doing: "47 risky actions blocked this week across 3 agents"
+
+### 🧪 v0.4 — Benchmarks + Hybrid ML
 - Published false positive/negative rates across standard threat datasets
-- Structured audit logging (JSON) for compliance
+- Optional cloud ML classification for ambiguous cases (rules first, ML as fallback)
+- Plugin architecture for custom rule functions
 - `vigil report` CLI for security posture snapshots
 
-### 🧠 v1.0 — ML Model (In Development)
-- Fine-tuned 7B safety model for context-aware action validation
+### 🧠 v0.5+ — Local ML Model
+- Fine-tuned safety model on HuggingFace for GPU users
 - Catches attacks that bypass pattern matching (obfuscation, indirect injection)
 - Same API — `checkAction()` automatically upgrades, no code changes
-- Hybrid mode: rules run first (<2ms), ML runs on ambiguous cases
-- **Current internal accuracy: 99% on our test suite**
 
-### 🌐 Future — Vigil Cloud
-- Hosted API with dashboard and analytics
-- Team policies with role-based access
-- Real-time threat intelligence feed
-- Custom model training on your agent logs
+### 🏁 v1.0 — When It's Earned
+v1.0 ships when Vigil has 100+ production users, external benchmarks, and proven accuracy. Not before.
 
 Want to influence the roadmap? [Open an issue](https://github.com/hexitlabs/vigil/issues) or star the repo to show interest.
 
