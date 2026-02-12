@@ -1,4 +1,4 @@
-# 🛡️ Vigil
+# VIGIL
 
 **Zero-dependency, <2ms safety guardrails for AI agents.**
 
