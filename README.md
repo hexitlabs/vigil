@@ -1,5 +1,10 @@
 # VIGIL
 
+[![CI](https://github.com/hexitlabs/vigil/actions/workflows/ci.yml/badge.svg)](https://github.com/hexitlabs/vigil/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/vigil-agent-safety)](https://www.npmjs.com/package/vigil-agent-safety)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/vigil-agent-safety)](https://bundlephobia.com/package/vigil-agent-safety)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+
 **Zero-dependency, <2ms safety guardrails for AI agents.**
 
 Vigil validates what AI agents **do**, not what they say. Drop it in front of any tool-calling agent to catch destructive commands, data exfiltration, SSRF, injection attacks, and more — before they execute.
