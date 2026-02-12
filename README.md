@@ -114,7 +114,9 @@ See [`examples/`](./examples/) for complete integration patterns:
 - **[basic.ts](./examples/basic.ts)** — Minimal usage
 - **[express-middleware.ts](./examples/express-middleware.ts)** — HTTP middleware
 - **[mcp-wrapper.ts](./examples/mcp-wrapper.ts)** — MCP server wrapper
+- **[circleci-mcp.ts](./examples/circleci-mcp.ts)** — CircleCI CI/CD safety (protected branches, secret access, rate limiting)
 - **[langchain-callback.ts](./examples/langchain-callback.ts)** — LangChain integration
+- **[openclaw-extension.ts](./examples/openclaw-extension.ts)** — OpenClaw/Clawdbot agent extension
 - **[generic-hook.ts](./examples/generic-hook.ts)** — Generic before-tool-call hook
 
 ## License
