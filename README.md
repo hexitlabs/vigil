@@ -15,6 +15,12 @@ Vigil validates what AI agents **do**, not what they say. Drop it in front of an
 npm install vigil-agent-safety
 ```
 
+Or via [ClawdHub](https://clawhub.ai) (for Clawdbot users):
+
+```bash
+npx clawhub install vigil
+```
+
 ## Quick Start
 
 ```typescript
