@@ -162,6 +162,19 @@ v1.0 ships when Vigil has 100+ production users, external benchmarks, and proven
 
 Want to influence the roadmap? [Open an issue](https://github.com/hexitlabs/vigil/issues) or star the repo to show interest.
 
+## Support Vigil
+
+Vigil is free and open source. If it saves you time or keeps your agents safe, consider supporting the project:
+
+- ⭐ [Star this repo](https://github.com/hexitlabs/vigil) — helps others discover Vigil
+- 💖 [Sponsor on GitHub](https://github.com/sponsors/RobinOppenstam) — recurring support
+- 🪙 Crypto donations:
+  - **ETH:** `PLACEHOLDER`
+  - **BTC:** `PLACEHOLDER`
+  - **SOL:** `PLACEHOLDER`
+
+Every bit helps us keep building open source security tools.
+
 ## License
 
 Apache 2.0 — Built by [HexIT Labs](https://github.com/hexitlabs)
