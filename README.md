@@ -169,9 +169,9 @@ Vigil is free and open source. If it saves you time or keeps your agents safe, c
 - ⭐ [Star this repo](https://github.com/hexitlabs/vigil) — helps others discover Vigil
 - 💖 [Sponsor on GitHub](https://github.com/sponsors/RobinOppenstam) — recurring support
 - 🪙 Crypto donations:
-  - **ETH:** `PLACEHOLDER`
-  - **BTC:** `PLACEHOLDER`
-  - **SOL:** `PLACEHOLDER`
+  - **EVM:** `0x3AA32976b514F4caaad1e8C69fD55d0E89B50a0e`
+  - **BTC:** `bc1qzqz9pnrngtq9y4tt9e7vznknxn4dtmphe2pppn`
+  - **SOL:** `8ag7B9DvnUdrgmbYnYxhAv25jwcLjzyoWt8uzYGd5XSC`
 
 Every bit helps us keep building open source security tools.
 
